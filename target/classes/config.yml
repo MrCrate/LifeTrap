@@ -1,0 +1,63 @@
+#permission
+#lifetrap.lifetrap        - /lifetrap
+#lifetrap.reload         - /lifetrap reload
+#lifetrap.lifetrap-give   - /lifetrap give <тип>
+
+messages:
+  no-permissions: "§4Недостаточно прав"
+  give: "§fИспользуйте §e/lifetrap give игрок trap/plast кол-во"
+  give-suc: "§fВы успешно выдали игроку %player% %itemname% x%amount%"
+  offline-player: "§cИгрок не был найден"
+  error-give: "§cОшибка! §fИспользуйте §e/lifetrap give игрок trap/plast кол-во"
+  cooldown-msg: "§fВремя до использования §c%sec% §fсек."
+
+#Список рг где работать не будет
+rg-black-list:
+  - 'test-name'
+  - 'test-name3'
+
+trap:
+  name: "§c[★] Трапка"
+  time: 15 # Время действия трапки в секундах
+  item: NETHERITE_SCRAP # Предмет выдачи
+  cooldown: 10 #Задержка после использования в секундах
+  lore:
+    - ""
+  sound:
+    radius: 3 #Радиус в котором будет слышен звук
+    name: BLOCK_PISTON_CONTRACT # Название звука
+    volume: 0.5 # Громкость звука
+    pitch: 0.1 #Тон звука
+  structure:
+    block1:
+      material: OBSIDIAN #тип блока
+      count: 70 #процент этого блока
+    block2:
+      material: CRYING_OBSIDIAN #тип блока
+      count: 30 #процент этого блока
+  slab: BLACKSTONE_SLAB #Название полу-блока
+  region-flags:
+    PVP: 'ALLOW'
+
+
+plast:
+  name: "§c[★] Пласт"
+  time: 90 # Время действия пласта в секундах
+  item: DRIED_KELP # Предмет выдачи
+  cooldown: 25 #Задержка после использования в секундах
+  lore:
+    - ""
+  sound:
+    radius: 3 #Радиус в котором будет слышен звук
+    name: BLOCK_PISTON_CONTRACT # Название звука
+    volume: 0.5 # Громкость звука
+    pitch: 0.1 #Тон звука
+  structure: #Состав из чего будет состоять пласт
+    block1:
+      material: OBSIDIAN #тип блока
+      count: 70 #процент этого блока
+    block2:
+      material: CRYING_OBSIDIAN #тип блока
+      count: 30 #процент этого блока
+  region-flags:
+    PVP: 'ALLOW'

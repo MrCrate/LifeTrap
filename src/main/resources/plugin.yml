@@ -1,0 +1,11 @@
+name: LifeTrap
+version: '${project.version}'
+main: com.mrc.dev.LifeTrap
+api-version: '1.16'
+author: [mrcDEV]
+depend:
+  - AntiRelog
+  - WorldEdit
+  - WorldGuard
+commands:
+  lifetrap:
